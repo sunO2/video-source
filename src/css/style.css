@@ -256,7 +256,8 @@ body {
         padding: 8px 12px;
     }
     .mdl-cell--12-col,.mdl-cell--12-col-phone.mdl-cell--12-col-phone {
-        width: calc(45% - 16px)
+        width: calc(45% - 16px);
+        min-width: 150px;
     }
 
     .mdl-grid {
