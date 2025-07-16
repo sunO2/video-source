@@ -230,21 +230,29 @@
     justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .resource-info {
     flex: 1;
+    min-width: 0;
 }
 
 .resource-name {
     font-size: 1rem;
     color: var(--text-primary);
     margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
 .resource-meta {
     font-size: 0.9rem;
     color: var(--text-secondary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
 .resource-actions {
