@@ -55,17 +55,6 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.custom-tab-bar {
-    display: flex;
-    align-items: center;
-    background-color: rgba(30, 144, 255, 0.3); /* DodgerBlue with low transparency for tabs */
-    backdrop-filter: blur(8px); /* Frosted glass effect */
-    -webkit-backdrop-filter: blur(8px); /* Safari support */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Darker shadow */
-    padding: 8px;
-    width: 200px;
-}
 
 .search-input {
     background-color: transparent;
@@ -94,10 +83,12 @@ body {
     position: fixed; /* Make it fixed */
     top: 64px; /* Adjust based on header height */
     z-index: 999; /* Ensure it stays on top */
-    width: 95%; /* Ensure it spans full width when fixed */
+    width: 80%;
+    max-width: 500px;
     left: 50%; /* Start from the middle */
     transform: translateX(-50%); /* Move back by half its width to center */
     box-sizing: border-box; /* Include padding and border in width */
+    align-items: center;
 }
 
 .custom-tab-button {
@@ -252,7 +243,7 @@ body {
     }
 
     .custom-tab-button {
-        font-size: 14px; /* Smaller font size for phone */
+        font-size: 12px; /* Smaller font size for phone */
         padding: 8px 12px;
     }
     .mdl-cell--12-col,.mdl-cell--12-col-phone.mdl-cell--12-col-phone {
@@ -262,6 +253,10 @@ body {
 
     .mdl-grid {
         padding: 0px;
+    }
+
+    .custom-tab-bar {
+        width: 95%;
     }
 }
 
