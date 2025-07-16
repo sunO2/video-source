@@ -1,0 +1,791 @@
+index.html 是一个影视资源的首页 detial.html 是影视资源的详情页 网站风格是 Android  Material 线条 边框 风格
+整个网站主体风格统一 
+首页含有头部搜索音视资源功能
+搜索接口为:
+https://5bt0.com/prod/api/v1/getVideoList?sb=%E4%BB%A5%E6%B3%95%E4%B9%8B%E5%90%8D&page=1&limit=24&app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c
+启动 sb 为搜索内容
+下面为搜索接口返回结果数据格式
+{
+    "requestId": "fb3dadb7-b57a-449a-98fc-57f7f157b477",
+    "path": "\/api\/v1\/getVideoList",
+    "success": true,
+    "message": "请求成功",
+    "code": 200,
+    "data": {
+        "data": [
+            {
+                "id": 16114,
+                "idcode": "2147868",
+                "type": 1,
+                "title": "以法之名",
+                "otitle": "In nome della legge",
+                "alias": " ",
+                "image": "https:\/\/img.9bt0.com\/i\/2025\/06\/27\/685e88c3093db.png",
+                "is_local_img": 2,
+                "doub_id": 2147868,
+                "doub_score": "0",
+                "doub_score_peo_num": 0,
+                "IMDB_number": "tt0041506",
+                "IMDB_score": "7.6",
+                "IMDB_score_peo_num": 808,
+                "quality": "@",
+                "years": "1949",
+                "release": "1949-02-19",
+                "class": "剧情",
+                "production_area": "法国,意大利",
+                "episodes": "0",
+                "long_time": "101 分钟",
+                "language": "意大利语",
+                "tags": "意大利,犯罪,意大利电影,M意大利,D皮亚托·杰米,1949,1940,黑白",
+                "director": "皮亚托·杰米",
+                "edit": "朱塞佩·吉欧尼,图里奥·皮内利,皮亚托·杰米,Aldo Bizzarri,费德里科·费里尼,马里奥·莫尼切利",
+                "performer": "马西莫·吉洛蒂,约内·萨利纳斯,夏尔·瓦内尔,卡米洛·马斯特罗钦奎,萨罗·乌尔齐,图里·潘多尔菲尼,翁贝托·斯帕达罗,萨罗·阿尔奇迪亚科诺,Bernardo Indelicato",
+                "abstract": "　　故事讲述一个满脸写着正直的西西里裔的年轻法官吉多&#8226;希亚伟（Guido Schiavi）来到了西西里村庄卡泊达尔索（Capodarso）。（众看官露出“有好戏看了”的表情）。而希亚伟不但与当地以帕萨拉夸（Passalacqua）为首的强大的黑手党势力发生冲突，而且还爱上的人正是试图向他行贿的煤老板的老婆！最终他对正义的信仰能不能经受得住考验呢？",
+                "is_top": 1,
+                "top_at": null,
+                "show_number": "37",
+                "is_show_seed": 1,
+                "created_by": null,
+                "updated_by": null,
+                "seed_updated_at": "2022-10-23 19:07:52",
+                "created_at": "2022-10-23 19:07:52",
+                "updated_at": "2025-06-27 20:04:22",
+                "remark": "",
+                "definition": "1080P蓝光,其他",
+                "tp": 1,
+                "zqxd": "1080P蓝光",
+                "ejs": ""
+            },
+            {
+                "id": 88986,
+                "idcode": "36657787",
+                "type": 2,
+                "title": "以法之名",
+                "otitle": "",
+                "alias": "In the Name of Justice",
+                "image": "https:\/\/img.9bt0.com\/i\/2025\/06\/25\/685b2bf6941df.png",
+                "is_local_img": 2,
+                "doub_id": 36657787,
+                "doub_score": "0",
+                "doub_score_peo_num": 0,
+                "IMDB_number": "tt31565382",
+                "IMDB_score": "0",
+                "IMDB_score_peo_num": 0,
+                "quality": "@",
+                "years": "2025",
+                "release": "",
+                "class": "剧情,犯罪",
+                "production_area": "中国大陆",
+                "episodes": "36",
+                "long_time": "",
+                "language": "汉语普通话",
+                "tags": "",
+                "director": "傅东育,郑世龙",
+                "edit": "傅东育,张成功,郑世龙,傅敏,王潮,曾梓妍,泓尚",
+                "performer": "张译,李光洁,蒋欣,刘佳,冯嘉怡,丁勇岱,杨烁,施京明,王劲松,是安,任重,郝平,白冰,董晴,徐梵溪,毛俊杰,宋熹,赵煊,金泽灏,章煜奇,田昊,姬他,颜世魁,林鹏,潘之琳,吴其江,赵梓冲,王艺荻,艾东,纪帅,孙强,宋楚炎,朱元浩,周劢劼,詹明君,黄义威,方晓莉,刘冠成,陈创,张思潼",
+                "abstract": "　　本剧讲述了海东省检察院检察官洪亮、郑雅萍等人在复查东平市“万海黑社会性质组织案”过程中发现司法人员在案件中的徇私枉法。他们以举报线索为突破口，彻底打掉了背后的黑恶势力，同时查办司法工作人员的职务犯罪。",
+                "is_top": 1,
+                "top_at": null,
+                "show_number": null,
+                "is_show_seed": 1,
+                "created_by": null,
+                "updated_by": null,
+                "seed_updated_at": "2025-07-16 04:48:37",
+                "created_at": "2025-06-25 08:25:09",
+                "updated_at": "2025-07-16 04:48:37",
+                "remark": null,
+                "definition": "WEB-4K,WEB-1080P",
+                "tp": 2,
+                "zqxd": "WEB-DL",
+                "ejs": "全集"
+            }
+        ],
+        "hosts_data": [],
+        "log": []
+    }
+}
+要求为 点击搜索按钮 弹出搜索框 确认搜索则请求搜索接口
+
+
+
+搜索框下是 资源推荐功能
+推荐接口为 
+https://5bt0.com/prod/api/v1/getVideoList?sc=1&app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c
+其中 sc 是 资源位置 分为 [电影,电视剧,近日热门,本周热门,本月热门] 所对应的位置 
+通过tab 切换 来获取推荐资源的列表进行展示 接口返回结果为
+{
+    "requestId": "80b26393-5f3d-4a12-ba5e-837d25743eb6",
+    "path": "\/api\/v1\/getVideoList",
+    "success": true,
+    "message": "请求成功",
+    "code": 200,
+    "data": {
+        "data": [
+            {
+                "id": 88932,
+                "idcode": "36455107",
+                "type": 2,
+                "title": "焕羽",
+                "otitle": "",
+                "alias": "Reborn",
+                "image": "https:\/\/img.9bt0.com\/i\/2025\/06\/19\/68540791940da.png",
+                "is_local_img": 2,
+                "doub_id": 36455107,
+                "doub_score": "0",
+                "doub_score_peo_num": 0,
+                "IMDB_number": "tt29274749",
+                "IMDB_score": "0",
+                "IMDB_score_peo_num": 0,
+                "quality": "@",
+                "years": "2025",
+                "release": "",
+                "class": "剧情,爱情,悬疑",
+                "production_area": "中国大陆",
+                "episodes": "23",
+                "long_time": "",
+                "language": "汉语普通话",
+                "tags": "",
+                "director": "刘紫微",
+                "edit": "钱晶晶,徐子元",
+                "performer": "张婧仪,周翊然,吴优,黄曦彦,刘丹,王艺荻,陈玺旭,黄毅,孙天宇,何廖侣匀,刘孜,曹卫宇,吕晓霖,崔航",
+                "abstract": "　　转校生乔青羽（张婧仪 饰）在叛逆校草明盛（周翊然 饰）的帮助下，逐渐解开姐姐六年前被全村人“谋杀”的真相，两人互相救赎，共同成长的故事。",
+                "is_top": 1,
+                "top_at": null,
+                "show_number": null,
+                "is_show_seed": 1,
+                "created_by": null,
+                "updated_by": null,
+                "seed_updated_at": "2025-07-07 12:20:38",
+                "created_at": "2025-06-19 21:50:25",
+                "updated_at": "2025-07-07 12:20:38",
+                "deleted_at": null,
+                "remark": null,
+                "definition": "WEB-1080P,WEB-4K,杜比视界",
+                "tp": 2,
+                "movies_id_count": 3516,
+                "zqxd": "WEB-DL",
+                "ejs": "全集"
+            },
+            {
+                "id": 89054,
+                "idcode": "37054291",
+                "type": 2,
+                "title": "锦绣芳华",
+                "otitle": "",
+                "alias": "国色芳华2",
+                "image": "https:\/\/img.9bt0.com\/i\/2025\/06\/30\/68626de5e92b9.png",
+                "is_local_img": 2,
+                "doub_id": 37054291,
+                "doub_score": "0",
+                "doub_score_peo_num": 0,
+                "IMDB_number": "",
+                "IMDB_score": "0",
+                "IMDB_score_peo_num": 0,
+                "quality": "@",
+                "years": "2025",
+                "release": "",
+                "class": "剧情,爱情",
+                "production_area": "中国大陆",
+                "episodes": "24",
+                "long_time": "",
+                "language": "汉语普通话",
+                "tags": "",
+                "director": "丁梓光",
+                "edit": "张鸢盎,马雨心,贾彬彬,李昱萱,意千重",
+                "performer": "杨紫,李现,魏哲鸣,张雅钦,涂松岩,管乐,许龄月,沈梦辰,佟梦实",
+                "abstract": "　　长安城里芳园每日熙来攘往，门庭若市，即便屡遭县主李幼贞掣肘，依旧屹立不倒。万国来朝时，芳园之主何惟芳临危受命，于风雪中盛放牡丹，尽显国色芳华，一时声名大噪。经商致富之梦眼看就要成真，却又突闻母亲去世真相，对当下所为顿生迷茫，行商前路未卜。一次意外遇险，让何惟芳豁然开朗，彻悟商人大义，转以实业利民，教授百姓立业，创办平价医药馆“悟庸堂”造福万民。同时暗中助力花鸟使蒋长扬与圣人，对抗意图造反的宁王，重振国风。蒋长扬终与何惟芳心意互通，却又不得不为大业而死。何惟芳决意要继续实现二人共同的家国理想，她一边行商济民，一边暗中筹措兵马，欲助圣人卷土重来。生死关头蒋长扬踏血而归，与何惟芳所助河东军并肩作战，最终大败宁王。诸事落定，国泰民安，牡丹芳飘万里，春耕大地。",
+                "is_top": 1,
+                "top_at": null,
+                "show_number": null,
+                "is_show_seed": 1,
+                "created_by": null,
+                "updated_by": null,
+                "seed_updated_at": "2025-07-14 03:52:19",
+                "created_at": "2025-06-30 19:08:16",
+                "updated_at": "2025-07-14 03:52:19",
+                "deleted_at": null,
+                "remark": null,
+                "definition": "WEB-1080P,WEB-4K",
+                "tp": 2,
+                "movies_id_count": 3512,
+                "zqxd": "WEB-DL",
+                "ejs": "全集"
+            },
+            {
+                "id": 88931,
+                "idcode": "36689869",
+                "type": 2,
+                "title": "完美的救赎",
+                "otitle": "",
+                "alias": "完美嫌疑人",
+                "image": "https:\/\/img.9bt0.com\/i\/2025\/06\/19\/685405ff50b21.png",
+                "is_local_img": 2,
+                "doub_id": 36689869,
+                "doub_score": "0",
+                "doub_score_peo_num": 0,
+                "IMDB_number": "tt31908451",
+                "IMDB_score": "0",
+                "IMDB_score_peo_num": 0,
+                "quality": "@",
+                "years": "2025",
+                "release": "",
+                "class": "剧情,悬疑",
+                "production_area": "中国大陆",
+                "episodes": "16",
+                "long_time": "",
+                "language": "汉语普通话",
+                "tags": "",
+                "director": "谢忠道,王方允",
+                "edit": "龙振宇",
+                "performer": "欧豪,王鹤润,成泰燊,王挺,张丰毅,赵志伟,李羽桐,古斌,林乐炫",
+                "abstract": "　　改编自陈研一的小说《完美嫌疑人》，以一场看似完美的犯罪为引线，串出表象之下的人性“病态”，裹挟着孩童事件，反照出众生相。",
+                "is_top": 1,
+                "top_at": null,
+                "show_number": null,
+                "is_show_seed": 1,
+                "created_by": null,
+                "updated_by": null,
+                "seed_updated_at": "2025-06-28 04:40:43",
+                "created_at": "2025-06-19 21:48:58",
+                "updated_at": "2025-06-28 04:40:43",
+                "deleted_at": null,
+                "remark": null,
+                "definition": "WEB-1080P,WEB-4K,杜比视界",
+                "tp": 2,
+                "movies_id_count": 3385,
+                "zqxd": "WEB-DL",
+                "ejs": "全集"
+            }
+        ],
+        "hosts_data": [],
+        "log": []
+    }
+}
+
+要求展示的列表最小为双列 最大列数为自适应屏幕
+
+
+详情
+
+https://5bt0.com/prod/api/v1/getVideoDetail?id=34807062&app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c
+结果 
+{
+    "requestId": "fbf0c325-33ed-4275-b7af-4ef406777d00",
+    "path": "\/api\/v1\/getVideoDetail",
+    "success": true,
+    "message": "请求成功",
+    "code": 200,
+    "data": {
+        "id": 89058,
+        "idcode": "34807062",
+        "type": 1,
+        "title": "疾速追杀：芭蕾杀姬",
+        "otitle": "Ballerina",
+        "alias": "疾速追杀外传：芭蕾杀姬,芭蕾女杀手,捍卫任务：复仇芭蕾(台),杀神John Wick外传：芭蕾杀姬(港),芭蕾猎杀,芭蕾舞女,芭蕾杀机,From the World of John Wick: Ballerina",
+        "image": "https:\/\/img.9bt0.com\/i\/2025\/07\/01\/6863646f994d7.png",
+        "is_local_img": 2,
+        "doub_id": 34807062,
+        "doub_score": "7.3",
+        "doub_score_peo_num": 47506,
+        "IMDB_number": "tt7181546",
+        "IMDB_score": "0",
+        "IMDB_score_peo_num": 0,
+        "quality": "@",
+        "years": "2025",
+        "release": "2025-06-06(美国,中国大陆),2025-06-04(澳大利亚)",
+        "class": "动作,惊悚",
+        "production_area": "美国",
+        "episodes": "0",
+        "long_time": "125分钟",
+        "language": "英语,德语",
+        "tags": "",
+        "director": "伦·怀斯曼",
+        "edit": "谢伊·哈顿,德里克·科尔斯塔德",
+        "performer": "安娜·德·阿玛斯,基努·里维斯,安杰丽卡·休斯顿,加布里埃尔·伯恩,伊恩·麦柯肖恩,诺曼·瑞杜斯,兰斯·莱迪克,卡塔琳娜·桑地诺·莫雷诺,艾娃·乔伊斯·麦卡锡,朱丽叶特·多赫提,莎伦·邓肯-布鲁斯特,大卫·卡斯塔尼达,维多利亚·孔德,罗伯特&#8231;马瑟,崔秀英,郑斗洪,安娜·帕里约,马克·克拉姆,福岛莉拉,亚伯拉罕·波波拉",
+        "abstract": "　　父亲惨遭杀害，少女伊芙（安娜·德·阿玛斯 饰）被迫加入杀手组织，在这里她被培养成为一名芭蕾舞者，同时接受了长达12年的魔鬼训练成为了顶级杀手，开启了血刃仇人的杀戮之旅。她不仅要独自一人完成组织下达的死亡任务，还要暗中搜集杀父仇家的信息。随时丧命的极端危险、各方势力的联合围剿，让伊芙的复仇之路艰难无比。同时，她又被传说中的杀手约翰·威克（基努·里维斯 饰）锁定，新老杀神狭路相逢，伊芙必须在被约翰追到之前杀出血路完成复仇。危险的倒计时开始，一场致命厮杀即将拉开血色序幕……",
+        "is_top": 1,
+        "top_at": null,
+        "show_number": null,
+        "is_show_seed": 1,
+        "created_by": null,
+        "updated_by": null,
+        "seed_updated_at": "2025-07-05 01:29:50",
+        "created_at": "2025-07-01 21:12:11",
+        "updated_at": "2025-07-05 01:29:50",
+        "remark": null,
+        "definition": "WEB-1080P,杜比视界,WEB-4K",
+        "tp": 1,
+        "is_vip": 2,
+        "znum": 7,
+        "bianji": [
+            "谢伊·哈顿",
+            "德里克·科尔斯塔德"
+        ],
+        "biaoqian": [
+            ""
+        ],
+        "arrare": [
+            "WEB-1080P",
+            "WEB-4K",
+            "杜比视界"
+        ],
+        "ecca": {
+            "WEB-1080P": [
+                {
+                    "zname": "疾速追杀：芭蕾杀姬[中文字幕].Ballerina.2025.1080p.MyVideo.WEB-DL.AAC2.0.H.264-DreamHD",
+                    "new": 1,
+                    "id": 745687,
+                    "zsize": "2.28 GB",
+                    "zqxd": "WEB-1080P",
+                    "zlink": "magnet:?xt=urn:btih:0B1C77ECE11859C3F8C2EE17B51F702CE69A4CFC",
+                    "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612745687",
+                    "ezt": "2025-07-05",
+                    "definition_group": "WEB-1080P"
+                },
+                {
+                    "zname": "疾速追杀：芭蕾杀姬[简繁英双语字幕].2025.1080p.iT.WEB-DL.H.264.DDP5.1.Atmos-QuickIO",
+                    "new": 1,
+                    "id": 744768,
+                    "zsize": "9.38 GB",
+                    "zqxd": "WEB-1080P",
+                    "zlink": "magnet:?xt=urn:btih:788EFE6962C322ACF0F5DD5BAACE3E84E9C0C9C8",
+                    "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744768",
+                    "ezt": "2025-07-02",
+                    "definition_group": "WEB-1080P"
+                },
+                {
+                    "zname": "疾速追杀：芭蕾杀姬[无字片源].2025.1080p.iT.WEB-DL.H.264.DDP5.1.Atmos-QuickIO",
+                    "new": 0,
+                    "id": 744214,
+                    "zsize": "9.28 GB",
+                    "zqxd": "WEB-1080P",
+                    "zlink": "magnet:?xt=urn:btih:37CF32D1257D46DFC3C6F0A007114FA75BF38415",
+                    "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744214",
+                    "ezt": "2025-07-01",
+                    "definition_group": "WEB-1080P"
+                }
+            ],
+            "WEB-4K": [
+                {
+                    "zname": "疾速追杀：芭蕾杀姬[HDR+杜比视界双版本][简繁英双语字幕].2025.2160p.iT.WEB-DL.DV.HDR.H.265.DDP5.1.Atmos-QuickIO",
+                    "new": 1,
+                    "id": 744769,
+                    "zsize": "21.81 GB",
+                    "zqxd": "WEB-4K",
+                    "zlink": "magnet:?xt=urn:btih:18595BB83D4982D4B61D5347AE2A4D87B995EFE9",
+                    "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744769",
+                    "ezt": "2025-07-02",
+                    "definition_group": "WEB-4K"
+                },
+                {
+                    "zname": "疾速追杀：芭蕾杀姬[无字片源].2025.2160p.iT.WEB-DL.HDR.H.265.DDP5.1.Atmos-QuickIO",
+                    "new": 1,
+                    "id": 744227,
+                    "zsize": "21.57 GB",
+                    "zqxd": "WEB-4K",
+                    "zlink": "magnet:?xt=urn:btih:CD5662FE9F5D55E50F47DF550CC4B1B8DF448C86",
+                    "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744227",
+                    "ezt": "2025-07-01",
+                    "definition_group": "WEB-4K"
+                },
+                {
+                    "zname": "疾速追杀：芭蕾杀姬[无字片源].2025.2160p.iT.WEB-DL.H.265.DDP5.1.Atmos-QuickIO",
+                    "new": 1,
+                    "id": 744225,
+                    "zsize": "18.39 GB",
+                    "zqxd": "WEB-4K",
+                    "zlink": "magnet:?xt=urn:btih:8C61A12882785B4E54F281F1A6544085C9F0CD09",
+                    "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744225",
+                    "ezt": "2025-07-01",
+                    "definition_group": "WEB-4K"
+                }
+            ],
+            "杜比视界": [
+                {
+                    "zname": "疾速追杀：芭蕾杀姬[杜比视界版本][无字片源].2025.2160p.iT.WEB-DL.DV.H.265.DDP5.1.Atmos-QuickIO",
+                    "new": 0,
+                    "id": 744223,
+                    "zsize": "13.18 GB",
+                    "zqxd": "杜比视界",
+                    "zlink": "magnet:?xt=urn:btih:F33E67D790A4FF621158407F89A0B12396C259D0",
+                    "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744223",
+                    "ezt": "2025-07-01",
+                    "definition_group": "杜比视界"
+                }
+            ]
+        },
+        "all_seeds": [
+            {
+                "zname": "疾速追杀：芭蕾杀姬[中文字幕].Ballerina.2025.1080p.MyVideo.WEB-DL.AAC2.0.H.264-DreamHD",
+                "new": 1,
+                "id": 745687,
+                "zsize": "2.28 GB",
+                "zqxd": "WEB-1080P",
+                "zlink": "magnet:?xt=urn:btih:0B1C77ECE11859C3F8C2EE17B51F702CE69A4CFC",
+                "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612745687",
+                "ezt": "2025-07-05",
+                "definition_group": "WEB-1080P"
+            },
+            {
+                "zname": "疾速追杀：芭蕾杀姬[HDR+杜比视界双版本][简繁英双语字幕].2025.2160p.iT.WEB-DL.DV.HDR.H.265.DDP5.1.Atmos-QuickIO",
+                "new": 1,
+                "id": 744769,
+                "zsize": "21.81 GB",
+                "zqxd": "WEB-4K",
+                "zlink": "magnet:?xt=urn:btih:18595BB83D4982D4B61D5347AE2A4D87B995EFE9",
+                "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744769",
+                "ezt": "2025-07-02",
+                "definition_group": "WEB-4K"
+            },
+            {
+                "zname": "疾速追杀：芭蕾杀姬[简繁英双语字幕].2025.1080p.iT.WEB-DL.H.264.DDP5.1.Atmos-QuickIO",
+                "new": 1,
+                "id": 744768,
+                "zsize": "9.38 GB",
+                "zqxd": "WEB-1080P",
+                "zlink": "magnet:?xt=urn:btih:788EFE6962C322ACF0F5DD5BAACE3E84E9C0C9C8",
+                "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744768",
+                "ezt": "2025-07-02",
+                "definition_group": "WEB-1080P"
+            },
+            {
+                "zname": "疾速追杀：芭蕾杀姬[无字片源].2025.2160p.iT.WEB-DL.HDR.H.265.DDP5.1.Atmos-QuickIO",
+                "new": 1,
+                "id": 744227,
+                "zsize": "21.57 GB",
+                "zqxd": "WEB-4K",
+                "zlink": "magnet:?xt=urn:btih:CD5662FE9F5D55E50F47DF550CC4B1B8DF448C86",
+                "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744227",
+                "ezt": "2025-07-01",
+                "definition_group": "WEB-4K"
+            },
+            {
+                "zname": "疾速追杀：芭蕾杀姬[无字片源].2025.2160p.iT.WEB-DL.H.265.DDP5.1.Atmos-QuickIO",
+                "new": 1,
+                "id": 744225,
+                "zsize": "18.39 GB",
+                "zqxd": "WEB-4K",
+                "zlink": "magnet:?xt=urn:btih:8C61A12882785B4E54F281F1A6544085C9F0CD09",
+                "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744225",
+                "ezt": "2025-07-01",
+                "definition_group": "WEB-4K"
+            },
+            {
+                "zname": "疾速追杀：芭蕾杀姬[杜比视界版本][无字片源].2025.2160p.iT.WEB-DL.DV.H.265.DDP5.1.Atmos-QuickIO",
+                "new": 0,
+                "id": 744223,
+                "zsize": "13.18 GB",
+                "zqxd": "杜比视界",
+                "zlink": "magnet:?xt=urn:btih:F33E67D790A4FF621158407F89A0B12396C259D0",
+                "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744223",
+                "ezt": "2025-07-01",
+                "definition_group": "杜比视界"
+            },
+            {
+                "zname": "疾速追杀：芭蕾杀姬[无字片源].2025.1080p.iT.WEB-DL.H.264.DDP5.1.Atmos-QuickIO",
+                "new": 0,
+                "id": 744214,
+                "zsize": "9.28 GB",
+                "zqxd": "WEB-1080P",
+                "zlink": "magnet:?xt=urn:btih:37CF32D1257D46DFC3C6F0A007114FA75BF38415",
+                "down": "\/prod\/api\/v1\/down?app_id=83768d9ad4&identity=23734adac0301bccdcb107c4aa21f96c&lx=1&id=1752650612744214",
+                "ezt": "2025-07-01",
+                "definition_group": "WEB-1080P"
+            }
+        ],
+        "movies_online_seed": {
+            "baidu": [
+                {
+                    "id": 2113,
+                    "movies_id": 89058,
+                    "users_info_id": 8763,
+                    "seed_name": "疾速追杀：芭蕾杀姬(2025)【4K.HDR10+】【杜比视界】【内封简繁英双语字幕】【动作\/惊悚】【21.6GB】",
+                    "link": "https:\/\/pan.baidu.com\/s\/1bbebttdLBa9MPzkMf75wPQ?pwd=Yu66",
+                    "type": "baidu",
+                    "status": "2",
+                    "created_by": 8763,
+                    "updated_by": 8763,
+                    "created_at": "2025-07-16 13:50:14",
+                    "updated_at": "2025-07-16 13:50:14",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "嘴笨的小鱼",
+                    "created_user": {
+                        "nickname": "嘴笨的小鱼"
+                    }
+                }
+            ],
+            "xunlei": [
+                {
+                    "id": 2114,
+                    "movies_id": 89058,
+                    "users_info_id": 8763,
+                    "seed_name": "疾速追杀：芭蕾杀姬(2025)【4K.HDR10+】【杜比视界】【内封简繁英双语字幕】【动作\/惊悚】【21.6GB】",
+                    "link": "https:\/\/pan.xunlei.com\/s\/VOUEGXnHkyyK8PDd6SlBnOAAA1?pwd=syxg#",
+                    "type": "xunlei",
+                    "status": "2",
+                    "created_by": 8763,
+                    "updated_by": 8763,
+                    "created_at": "2025-07-16 13:50:11",
+                    "updated_at": "2025-07-16 13:50:11",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "嘴笨的小鱼",
+                    "created_user": {
+                        "nickname": "嘴笨的小鱼"
+                    }
+                },
+                {
+                    "id": 2005,
+                    "movies_id": 89058,
+                    "users_info_id": 14091,
+                    "seed_name": "疾速追杀：芭蕾杀姬[杜比视界版本][无字片源].2025.2160p.iT.WEB-DL.DV.H.265.DDP5.1.Atmos",
+                    "link": "https:\/\/pan.xunlei.com\/s\/VOU7iz857dCTiH0z5_Ut6y_5A1?pwd=4wyz#",
+                    "type": "xunlei",
+                    "status": "2",
+                    "created_by": 14091,
+                    "updated_by": 14091,
+                    "created_at": "2025-07-02 09:24:34",
+                    "updated_at": "2025-07-02 09:24:34",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "杜比视界",
+                    "created_user": {
+                        "nickname": "杜比视界"
+                    }
+                },
+                {
+                    "id": 1855,
+                    "movies_id": 89058,
+                    "users_info_id": 13117,
+                    "seed_name": "疾速追杀：芭蕾杀姬 [2025][4K高码][附前4部及剧集][美国 动作 惊悚][安娜·德·阿玛斯 基努·里维斯]",
+                    "link": "https:\/\/pan.xunlei.com\/s\/VOU38k2bGo-u8u_JheNi4TfuA1?pwd=tqsx#",
+                    "type": "xunlei",
+                    "status": "2",
+                    "created_by": 13117,
+                    "updated_by": 13117,
+                    "created_at": "2025-07-01 23:08:45",
+                    "updated_at": "2025-07-01 23:08:45",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "Tacit0924",
+                    "created_user": {
+                        "nickname": "Tacit0924"
+                    }
+                }
+            ],
+            "quark": [
+                {
+                    "id": 2115,
+                    "movies_id": 89058,
+                    "users_info_id": 8763,
+                    "seed_name": "疾速追杀：芭蕾杀姬(2025)【4K.HDR10+】【杜比视界】【内封简繁英双语字幕】【动作\/惊悚】【21.6GB】#",
+                    "link": "https:\/\/pan.quark.cn\/s\/0718456732c7",
+                    "type": "quark",
+                    "status": "2",
+                    "created_by": 8763,
+                    "updated_by": 8763,
+                    "created_at": "2025-07-16 13:50:09",
+                    "updated_at": "2025-07-16 13:50:09",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "嘴笨的小鱼",
+                    "created_user": {
+                        "nickname": "嘴笨的小鱼"
+                    }
+                },
+                {
+                    "id": 1882,
+                    "movies_id": 89058,
+                    "users_info_id": 12875,
+                    "seed_name": "「疾速追杀：芭蕾杀姬（2025）4K流媒体正式版+DDP5.1」【外挂中文字幕】",
+                    "link": "https:\/\/pan.quark.cn\/s\/fce8608e9098",
+                    "type": "quark",
+                    "status": "2",
+                    "created_by": 12875,
+                    "updated_by": 12875,
+                    "created_at": "2025-07-09 00:41:15",
+                    "updated_at": "2025-07-09 00:41:15",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "Maybe",
+                    "created_user": {
+                        "nickname": "Maybe"
+                    }
+                },
+                {
+                    "id": 2020,
+                    "movies_id": 89058,
+                    "users_info_id": 8484,
+                    "seed_name": "疾速追杀：芭蕾杀姬 (2025) 中英双字 内嵌硬字幕 4K 动作 惊悚",
+                    "link": "https:\/\/pan.quark.cn\/s\/926908d2784b",
+                    "type": "quark",
+                    "status": "2",
+                    "created_by": 8484,
+                    "updated_by": 8484,
+                    "created_at": "2025-07-02 12:02:13",
+                    "updated_at": "2025-07-02 12:02:13",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "漫步人生",
+                    "created_user": {
+                        "nickname": "漫步人生"
+                    }
+                },
+                {
+                    "id": 2009,
+                    "movies_id": 89058,
+                    "users_info_id": 14321,
+                    "seed_name": "疾速追杀：芭蕾杀姬 (2025) 4K H265 DV HDR10+ HDR10 DDP 5.1 简英双语字幕 22G 已刮削",
+                    "link": "https:\/\/pan.quark.cn\/s\/46f2a205dc22",
+                    "type": "quark",
+                    "status": "2",
+                    "created_by": 14321,
+                    "updated_by": 14321,
+                    "created_at": "2025-07-02 11:03:00",
+                    "updated_at": "2025-07-02 11:03:00",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "xzz",
+                    "created_user": {
+                        "nickname": "xzz"
+                    }
+                },
+                {
+                    "id": 1854,
+                    "movies_id": 89058,
+                    "users_info_id": 13117,
+                    "seed_name": "疾速追杀：芭蕾杀姬 [2025][4K高码][附前4部及剧集][美国 动作 惊悚][安娜·德·阿玛斯 基努·里维斯]",
+                    "link": "https:\/\/pan.quark.cn\/s\/b6f9cff00ea1",
+                    "type": "quark",
+                    "status": "2",
+                    "created_by": 13117,
+                    "updated_by": 13117,
+                    "created_at": "2025-07-01 23:08:25",
+                    "updated_at": "2025-07-01 23:08:25",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "Tacit0924",
+                    "created_user": {
+                        "nickname": "Tacit0924"
+                    }
+                },
+                {
+                    "id": 1850,
+                    "movies_id": 89058,
+                    "users_info_id": 138,
+                    "seed_name": "芭蕾杀姬.Ballerina.2025.1080p.WEB-DL.DDP5.1.x265 1.85G 英语中字",
+                    "link": "https:\/\/pan.quark.cn\/s\/04263d06ec99",
+                    "type": "quark",
+                    "status": "2",
+                    "created_by": 138,
+                    "updated_by": 138,
+                    "created_at": "2025-07-01 22:04:24",
+                    "updated_at": "2025-07-01 22:04:24",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "ringo",
+                    "created_user": {
+                        "nickname": "ringo"
+                    }
+                }
+            ],
+            "123": [
+                {
+                    "id": 2725,
+                    "movies_id": 89058,
+                    "users_info_id": 2377,
+                    "seed_name": "疾速追杀：芭蕾杀姬[HDR+杜比视界双版本][简繁英双语字幕].2025.2160p.iT.WEB-DL.DV.HDR.H.265.DDP5.1_123pan",
+                    "link": "https:\/\/www.123912.com\/s\/mczDjv-WtJJ3?bVbd",
+                    "type": "123",
+                    "status": "2",
+                    "created_by": 2377,
+                    "updated_by": 2377,
+                    "created_at": "2025-07-10 10:42:13",
+                    "updated_at": "2025-07-10 10:42:13",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "bVbd",
+                    "nickname": "不二",
+                    "created_user": {
+                        "nickname": "不二"
+                    }
+                },
+                {
+                    "id": 2008,
+                    "movies_id": 89058,
+                    "users_info_id": 14321,
+                    "seed_name": "疾速追杀：芭蕾杀姬 (2025) 4K H265 DV HDR10+ HDR10 DDP 5.1 简英双语字幕 22G 已刮削",
+                    "link": "https:\/\/www.123912.com\/s\/Vbq0Vv-Ey8c3",
+                    "type": "123",
+                    "status": "2",
+                    "created_by": 14321,
+                    "updated_by": 14321,
+                    "created_at": "2025-07-02 11:01:14",
+                    "updated_at": "2025-07-02 11:01:14",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "xzz",
+                    "created_user": {
+                        "nickname": "xzz"
+                    }
+                }
+            ],
+            "ali": [
+                {
+                    "id": 2475,
+                    "movies_id": 89058,
+                    "users_info_id": 18317,
+                    "seed_name": "疾速追杀 🇺🇸〔更新至疾速追杀：芭蕾杀姬 捍卫任务：复仇芭蕾(台) 杀神John Wick外传：芭蕾杀姬(港) Ballerina 2025 🇺🇸〕",
+                    "link": "https:\/\/www.aliyundrive.com\/s\/JZoVJakpQqY",
+                    "type": "ali",
+                    "status": "2",
+                    "created_by": 18317,
+                    "updated_by": 18317,
+                    "created_at": "2025-07-07 00:16:29",
+                    "updated_at": "2025-07-07 00:16:29",
+                    "deleted_at": null,
+                    "remark": null,
+                    "code": "",
+                    "nickname": "VV666",
+                    "created_user": {
+                        "nickname": "VV666"
+                    }
+                }
+            ]
+        },
+        "movies_online_seed_type": [
+            {
+                "label": "百度网盘",
+                "value": "baidu"
+            },
+            {
+                "label": "夸克网盘",
+                "value": "quark"
+            },
+            {
+                "label": "迅雷网盘",
+                "value": "xunlei"
+            },
+            {
+                "label": "123网盘",
+                "value": "123"
+            },
+            {
+                "label": "阿里网盘",
+                "value": "ali"
+            }
+        ]
+    }
+}

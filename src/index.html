@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影视资源首页</title>
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&v=1">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">影视资源</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Search Icon and Input -->
+                <div class="search-container">
+                    <i class="material-icons search-icon">search</i>
+                    <input type="text" class="search-input" placeholder="搜索资源">
+                </div>
+            </div>
+        </header>
+        <div class="custom-tab-bar">
+            <button class="custom-tab-button is-active" data-sc="1" data-target="tab1-panel">电影</button>
+            <button class="custom-tab-button" data-sc="2" data-target="tab2-panel">电视剧</button>
+            <button class="custom-tab-button" data-sc="3" data-target="tab3-panel">近日热门</button>
+            <button class="custom-tab-button" data-sc="4" data-target="tab4-panel">本周热门</button>
+            <button class="custom-tab-button" data-sc="5" data-target="tab5-panel">本月热门</button>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="custom-tab-panel is-active" id="tab1-panel">
+                    <div class="mdl-grid movie-list" id="movie-list-1"></div>
+                </div>
+                <div class="custom-tab-panel" id="tab2-panel">
+                    <div class="mdl-grid movie-list" id="movie-list-2"></div>
+                </div>
+                <div class="custom-tab-panel" id="tab3-panel">
+                    <div class="mdl-grid movie-list" id="movie-list-3"></div>
+                </div>
+                <div class="custom-tab-panel" id="tab4-panel">
+                    <div class="mdl-grid movie-list" id="movie-list-4"></div>
+                </div>
+                <div class="custom-tab-panel" id="tab5-panel">
+                    <div class="mdl-grid movie-list" id="movie-list-5"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Material Design Lite JavaScript -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Dialog Polyfill for older browsers -->
+    <script defer src="https://unpkg.com/dialog-polyfill@0.5.0/dist/dialog-polyfill.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+/* 详情页面专用样式 - 玻璃效果和响应式布局 */
+
+:root {
+    --glass-bg: rgba(30, 144, 255, 0.08);
+    --glass-border: rgba(30, 144, 255, 0.2);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --accent-color: #1e90ff;
+}
+
+.detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 玻璃效果基础类 */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+    padding: 0px 16px 16px 16px;
+}
+
+.glass-card:hover {
+    background: rgba(30, 144, 255, 0.12);
+    border-color: rgba(30, 144, 255, 0.3);
+}
+
+/* 头部信息区域 */
+.movie-header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.movie-poster {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--glass-shadow);
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.movie-poster:hover img {
+    transform: scale(1.05);
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movie-title-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+.movie-original-title {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin: 0 0 20px 0;
+}
+
+.movie-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.meta-value {
+    font-size: 0.7rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* 评分标签 */
+.rating-tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rating-tag-small {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.rating-tag-small.imdb {
+    background: linear-gradient(135deg, #f5c518, #e6b800);
+    color: #000;
+}
+
+.rating-tag-small.douban {
+    background: linear-gradient(135deg, #228b22, #1a6b1a);
+    color: #fff;
+}
+
+/* 演员标签 */
+.cast-section {
+    margin: 30px 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.cast-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cast-tag {
+    padding: 8px 16px;
+    background: rgba(30, 144, 255, 0.2);
+    border: 1px solid rgba(30, 144, 255, 0.3);
+    border-radius: 20px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.cast-tag:hover {
+    background: rgba(30, 144, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* 简介区域 */
+.synopsis-section {
+    margin: 30px 0;
+}
+
+.synopsis-content {
+    padding: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+/* Tab区域 */
+.tabs-section {
+    margin: 30px 0;
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.tab-button {
+    padding: 12px 24px;
+    background: rgba(30, 144, 255, 0.1);
+    border: 1px solid rgba(30, 144, 255, 0.2);
+    border-radius: 25px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.tab-button.active {
+    background: rgba(30, 144, 255, 0.3);
+    color: var(--text-primary);
+    border-color: rgba(30, 144, 255, 0.5);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 资源列表 */
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.resource-item {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.resource-info {
+    flex: 1;
+}
+
+.resource-name {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.resource-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.resource-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    padding: 8px 16px;
+    background: rgba(30, 144, 255, 0.2);
+    border: 1px solid rgba(30, 144, 255, 0.3);
+    border-radius: 20px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.action-button:hover {
+    background: rgba(30, 144, 255, 0.4);
+    transform: translateY(-1px);
+}
+
+.mdl-layout__header-row {
+    padding: 0px 0px;
+}
+
+.app-arrow-back {
+    padding: 0px
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .movie-header {
+        grid-template-columns: 4fr 3fr;
+        gap: 20px;
+    }
+    
+    .movie-poster {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .movie-title-section h1 {
+        font-size: 2rem;
+    }
+    
+    .movie-meta-grid {
+        grid-template-columns: 1fr;
+        gap: 1px;
+    }
+    
+    .rating-tags {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .tab-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .resource-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .resource-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .movie-info {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .detail-container {
+        padding: 10px;
+    }
+    
+    .movie-title-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .movie-original-title {
+        font-size: 1rem;
+    }
+    
+    .cast-tag {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    .synopsis-content {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+/* 加载动画 */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: var(--text-secondary);
+}
+
+.loading::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(30, 144, 255, 0.3);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 错误提示 */
+.error-message {
+    text-align: center;
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    padding: 40px;
+}
+
+/* 网盘资源样式 */
+.cloud-resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.cloud-resource-item {
+    padding: 15px;
+}
+
+.cloud-resource-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cloud-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.cloud-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.cloud-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.cloud-link:hover {
+    text-decoration: underline;
+}
+
+
+
+.page-content {
+    padding-top: 80px; /* Compensate for fixed header (64px) and fixed tab bar (approx 76px) */
+}
