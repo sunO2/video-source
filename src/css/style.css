@@ -364,3 +364,19 @@ img {
         opacity: 0;
     }
 }
+
+@keyframes spray-and-fix {
+    0% {
+        transform: translate3d(calc(50vw - 50%), 100vh, 0); /* 从底部中心开始 */
+        opacity: 0;
+        will-change: transform, opacity;
+    }
+    100% {
+        /* 最终位置，结合初始速度和重力效果 */
+        transform: translate3d(var(--target-x-px), var(--target-y-px), 0);
+        opacity: 1;
+        /* 使用更复杂的贝塞尔曲线模拟抛物线 */
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 缓入缓出，模拟上升减速 */
+        will-change: transform, opacity;
+    }
+}
