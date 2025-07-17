@@ -96,15 +96,19 @@ function renderMovieDetail(movie) {
     if ((!movie.doub_score || movie.doub_score === '0') && (!movie.IMDB_score || movie.IMDB_score === '0')) {
         ratingTags.style.display = 'none';
     } else {
-        ratingTags.style.display = 'block';
+        ratingTags.style.display = 'flex';
         if (movie.doub_score && movie.doub_score !== '0') {
             document.getElementById('douban-score').textContent = `${movie.doub_score}`;
             doubanRating.style.display = 'flex';
+        }else {
+            doubanRating.style.display = 'none';
         }
 
         if (movie.IMDB_score && movie.IMDB_score !== '0') {
             document.getElementById('imdb-score').textContent = `${movie.IMDB_score}`;
             imdbRating.style.display = 'flex';
+        }else{
+            imdbRating.style.display = 'none';
         }
     }
 
