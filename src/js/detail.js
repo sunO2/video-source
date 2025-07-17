@@ -78,7 +78,10 @@ function renderMovieDetail(movie) {
         yearAndEpisodes += ` (共${movie.episodes}集)`;
     }
     document.getElementById('movie-year').textContent = yearAndEpisodes;
-    document.getElementById('movie-episodes').parentNode.style.display = 'none';
+    let movie_episodes = document.getElementById('movie-episodes');
+    if(movie_episodes){
+        movie_episodes.parentNode.style.display = 'none';
+    }
 
     // 海报
     const posterImg = document.getElementById('movie-poster-img');
