@@ -4,9 +4,10 @@
   "author": "ex-hezhihu870 <ex-hezhihu870@pingan.com.cn>",
   "license": "MIT",
   "scripts": {
-     "index": "lite-server ./src"
+    "index": "lite-server ./src"
   },
   "dependencies": {
+    "http-server": "^14.1.1",
     "lite-server": "^2.6.1"
   }
 }

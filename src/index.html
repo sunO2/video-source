@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>影视资源首页</title>
@@ -61,14 +62,6 @@
     <!-- Custom JavaScript -->
     <script type="module" src="js/bg.js"></script>
     <script type="module" src="js/api.js"></script>
-    <link rel="manifest" href="manifest.json">
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js');
-            });
-        }
-    </script>
     <script type="module" src="js/index.js"></script>
 </body>
 </html>

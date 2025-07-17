@@ -4,7 +4,7 @@
     "description": "一个影视资源聚合应用",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#121212",
+    "background_color": "#3f51b574",
     "theme_color": "#3f51b574",
     "icons": [
         {
