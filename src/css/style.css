@@ -311,6 +311,10 @@ img {
     pointer-events: none;
 }
 
+.item_image_contain {
+    opacity: 0.9;
+}
+
 .search-input {
     width: 0;
     padding: 8px 0;

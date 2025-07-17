@@ -1,0 +1,21 @@
+{
+    "name": "影视资源",
+    "short_name": "影视",
+    "description": "一个影视资源聚合应用",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#3f51b574",
+    "icons": [
+        {
+            "src": "access/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "access/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

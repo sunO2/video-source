@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             movieCard.innerHTML = `
-                <div class="mdl-card__title mdl-card--expand" style="background: url('${imageUrl}') center / cover;">
+                <div class="mdl-card__title mdl-card--expand item_image_contain" style="background: url('${imageUrl}') center / cover;">
                 </div>
                 <div class="mdl-card__title-text-container">
                     <h2 class="mdl-card__title-text">${movie.title}</h2>
