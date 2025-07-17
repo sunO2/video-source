@@ -101,5 +101,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    setInterval(checkOverlap, 100);
+    // setInterval(checkOverlap, 100);
 });
