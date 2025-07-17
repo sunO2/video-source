@@ -73,6 +73,11 @@ function renderMovieDetail(movie) {
     document.getElementById('movie-language').textContent = movie.language || '未知';
     document.getElementById('movie-duration').textContent = movie.long_time || '未知';
     document.getElementById('movie-director').textContent = movie.director || '未知';
+    if (movie.episodes && movie.episodes !== '0') {
+        document.getElementById('movie-episodes').textContent = movie.episodes;
+    } else {
+        document.getElementById('movie-episodes').parentNode.style.display = 'none';
+    }
     
     // 海报
     const posterImg = document.getElementById('movie-poster-img');

@@ -313,6 +313,27 @@ img {
 
 .item_image_contain {
     opacity: 0.7;
+    position: relative;
+}
+
+.ejs-tag {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    z-index: 10;
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .search-input {
