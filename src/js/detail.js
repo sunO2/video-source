@@ -273,7 +273,7 @@ function renderCloudResourceList(resources, typeName) {
                         <div class="cloud-icon" style="background: ${getCloudColor(resource.type)}"></div>
                         <div class="cloud-name">${resource.nickname || '匿名用户'}</div>
                     </div>
-                    <div style="margin-bottom: 10px;">${resource.seed_name}</div>
+                    <div class="resource-name" style="margin-bottom: 10px;">${resource.seed_name}</div>
                     <a href="${resource.link}" class="cloud-link" target="_blank">
                         ${resource.link}
                         ${resource.code ? ` 提取码: ${resource.code}` : ''}
