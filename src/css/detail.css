@@ -37,7 +37,7 @@
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .movie-poster {
@@ -106,7 +106,7 @@
 .rating-tags {
     display: flex;
     gap: 8px;
-    margin-top: 15px;
+    margin-top: 8px;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -142,7 +142,8 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 15px;
+    margin-bottom: 4px;
+    margin-top: 8px;
 }
 
 .cast-tags {
@@ -306,7 +307,7 @@
     }
     
     .rating-tags {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
     
@@ -344,13 +345,13 @@
     }
     
     .cast-tag {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+        font-size: 0.7rem;
+        padding: 2px 12px;
     }
     
     .synopsis-content {
-        padding: 15px;
-        font-size: 1rem;
+        padding: 8px;
+        font-size: 0.9rem;
     }
 }
 

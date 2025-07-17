@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div id="emoji-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></div>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
@@ -58,6 +59,7 @@
     <!-- Dialog Polyfill for older browsers -->
     <script defer src="https://unpkg.com/dialog-polyfill@0.5.0/dist/dialog-polyfill.js"></script>
     <!-- Custom JavaScript -->
+    <script type="module" src="js/bg.js"></script>
     <script type="module" src="js/api.js"></script>
     <script type="module" src="js/index.js"></script>
 </body>
