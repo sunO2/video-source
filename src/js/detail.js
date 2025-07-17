@@ -73,34 +73,41 @@ function renderMovieDetail(movie) {
     document.getElementById('movie-language').textContent = movie.language || '未知';
     document.getElementById('movie-duration').textContent = movie.long_time || '未知';
     document.getElementById('movie-director').textContent = movie.director || '未知';
+    let yearAndEpisodes = movie.years || '未知';
     if (movie.episodes && movie.episodes !== '0') {
-        document.getElementById('movie-episodes').textContent = movie.episodes;
-    } else {
-        document.getElementById('movie-episodes').parentNode.style.display = 'none';
+        yearAndEpisodes += ` (共${movie.episodes}集)`;
     }
-    
+    document.getElementById('movie-year').textContent = yearAndEpisodes;
+    document.getElementById('movie-episodes').parentNode.style.display = 'none';
+
     // 海报
     const posterImg = document.getElementById('movie-poster-img');
     posterImg.src = movie.image || 'https://via.placeholder.com/300x450?text=No+Image';
     posterImg.alt = movie.title || '电影海报';
-    
+
     // 评分标签 - 条件显示
     const doubanRating = document.getElementById('douban-rating');
     const imdbRating = document.getElementById('imdb-rating');
-    
-    if (movie.doub_score && movie.doub_score !== '0') {
-        document.getElementById('douban-score').textContent = `${movie.doub_score}`;
-        doubanRating.style.display = 'flex';
+    const ratingTags = document.querySelector('.rating-tags');
+
+    if ((!movie.doub_score || movie.doub_score === '0') && (!movie.IMDB_score || movie.IMDB_score === '0')) {
+        ratingTags.style.display = 'none';
+    } else {
+        ratingTags.style.display = 'block';
+        if (movie.doub_score && movie.doub_score !== '0') {
+            document.getElementById('douban-score').textContent = `${movie.doub_score}`;
+            doubanRating.style.display = 'flex';
+        }
+
+        if (movie.IMDB_score && movie.IMDB_score !== '0') {
+            document.getElementById('imdb-score').textContent = `${movie.IMDB_score}`;
+            imdbRating.style.display = 'flex';
+        }
     }
-    
-    if (movie.IMDB_score && movie.IMDB_score !== '0') {
-        document.getElementById('imdb-score').textContent = `${movie.IMDB_score}`;
-        imdbRating.style.display = 'flex';
-    }
-    
+
     // 演员标签
     renderCastTags(movie.performer);
-    
+
     // 简介
     document.getElementById('movie-synopsis').textContent = movie.abstract || '暂无简介';
     
