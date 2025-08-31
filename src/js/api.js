@@ -1,5 +1,5 @@
 // API functions for fetching movie data
-const API_BASE_URL = 'https://5bt0.com/prod/api/v1';
+const API_BASE_URL = 'https://web.mukaku.com/prod/api/v1/';
 const APP_ID = '83768d9ad4';
 const IDENTITY = '23734adac0301bccdcb107c4aa21f96c';
 
